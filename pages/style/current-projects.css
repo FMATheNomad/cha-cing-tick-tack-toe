@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; /* Adjust as needed */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, navy, white, navy);
+  text-align: center;
+  padding: 50px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.card-project {
+  width: 250px; /* Adjust as needed */
+  margin: 10px;
+  background-color: white; /* Adjust as needed */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.demo-project {
+  background-color: black;
+  border-radius: 5px;
+  font-family: "Chakra Petch", sans-serif;
+}
+.demo-project a {
+  text-decoration: none;
+  color: white;
+}
+.demo-project:hover {
+  border: 2px solid navy;
+  background-color: navy;
+}
+.project-img {
+  width: 100%;
+  max-width: 235px; /* Adjust as needed */
+  height: auto;
+  border-radius: 5px;
+}
+
+.title-project {
+  margin-top: 10px;
+}
+
+.back-button {
+  margin-top: 20px;
+  background-color: black;
+  border-radius: 5px;
+  font-family: "Chakra Petch", sans-serif;
+}
+.back-button a {
+  text-decoration: none;
+  color: white;
+}
+.back-button:hover {
+  border: 2px solid navy;
+  background-color: navy;
+}

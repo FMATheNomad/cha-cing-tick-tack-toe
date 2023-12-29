@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1;
+}
+.container {
+  background: linear-gradient(to right, navy, white, navy);
+  text-align: center;
+  padding: 50px;
+}
+.logo img {
+  width: 200px;
+  border: 5px solid #a9a9a9;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.my-name {
+  margin-top: 10px;
+  font-family: "Monoton", sans-serif;
+  font-size: 45px;
+  color: #493d3d59;
+}
+.branding-name {
+  font-family: "Roboto", sans-serif;
+}
+.list-of-cta-button {
+  margin-top: 15px;
+}
+.cta-button {
+  font-family: "Chakra Petch", sans-serif;
+  border: 5px solid black;
+  background-color: black;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.cta-button:hover {
+  border: 5px solid navy;
+  background-color: navy;
+}
+.cta-button a {
+  color: white;
+  text-decoration: none;
+}
+.accordion {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: black;
+  color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+.accordion-content {
+  padding: 15px;
+  display: none;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+}
+footer {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+@media screen and (max-width: 600px) {
+  .accordion {
+    max-width: 100%;
+  }
+}

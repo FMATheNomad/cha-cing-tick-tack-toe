@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hello my future partner! Welcome. Have a look around!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="assets/img/favicon_io/android-chrome-512x512.png"
+          alt="my-logo"
+        />
+      </div>
+      <div class="branding-name">
+        <h1 class="my-name">FMA</h1>
+        <h1>The Nomad</h1>
+        <br />
+        <h3>Fullstack Web Developer, Drummer, Small Businessman.</h3>
+        <br />
+        <h4>"The world is full of unfairness, so get used to it!"</h4>
+        <br />
+      </div>
+      <div class="list-of-cta-button">
+        <ul>
+          <li>
+            <button class="cta-button">
+              <a href="pages/current-projects.html" target="_blank"
+                >Current project (On running)</a
+              >
+            </button>
+          </li>
+          <li>
+            <button class="cta-button">
+              <a href="pages/my-portfolio.html" target="_blank">My portfolio</a>
+            </button>
+          </li>
+          <li>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">My skills</div>
+                <div class="accordion-content">
+                  <p>Section 1 content goes here.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class="cta-button">
+              <a href="#" target="_blank">View my resume/cv</a>
+            </button>
+          </li>
+          <li>
+            <button class="cta-button">
+              <a href="#" target="_blank">Hire me as a freelancer</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <footer>
+        <small
+          >FMA, made with some coffee and some sophisticated classical music.
+          &copy; <span id="tahun"></span
+        ></small>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionItems = document.querySelectorAll(".accordion-item");
+        accordionItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            this.classList.toggle("active");
+          });
+        });
+      });
+    </script>
+    <script>
+      function tampilkanTahun() {
+        var waktu = new Date();
+        var tahun = waktu.getFullYear();
+        document.getElementById("tahun").innerHTML = tahun;
+      }
+      tampilkanTahun();
+      setInterval(tampilkanTahun, 1000);
+    </script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
